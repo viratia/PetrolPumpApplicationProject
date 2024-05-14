@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>PetrolPumpManagementSystem</display-name>
+  <welcome-file-list>
+   <welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+    
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Serv</display-name>
+    <servlet-name>Serv</servlet-name>
+    <servlet-class>com.org.Serv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Serv</servlet-name>
+    <url-pattern>/newSave</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EOCheck</display-name>
+    <servlet-name>EOCheck</servlet-name>
+    <servlet-class>ko.org.EOCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EOCheck</servlet-name>
+    <url-pattern>/Check</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MachineController</display-name>
+    <servlet-name>MachineController</servlet-name>
+    <servlet-class>org.petrolpumpadmin.Controller.MachineController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MachineController</servlet-name>
+    <url-pattern>/MachineController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MachineControllerr</display-name>
+    <servlet-name>MachineControllerr</servlet-name>
+    <servlet-class>org.petrolpumpadmin.Controller.MachineController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MachineControllerr</servlet-name>
+    <url-pattern>/MachineControllerr</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteControllerServlet</display-name>
+    <servlet-name>DeleteControllerServlet</servlet-name>
+    <servlet-class>org.petrolpumpadmin.Controller.DeleteControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteControllerServlet</servlet-name>
+    <url-pattern>/del</url-pattern>
+  </servlet-mapping>
+</web-app>
+</element>
